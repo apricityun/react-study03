@@ -1,30 +1,29 @@
 import React from 'react';
-// import './Catering.css';
+import './Catering.css';
 // import NavCatering from './NavCatering';
 
 function Catering() {
   return (
     <div>
-      <nav class="fixed-top">
+      {/* navbar를 넣어주니까 위쪽 여백 생김....어떻게 지워? */}
+      <nav class="navbar fixed-top navbar-expand-sm">
         {/* <NavCatering /> */}
-        <div class="shadow-sm p-4 mb-4 bg-white">
+        <div class="container-fluid shadow-sm p-3 mb-5 bg-white">
+          <div >
+          <a class="fs-3" href="#">Gourmet au Catering</a>
+          </div>
           <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Gourmet au Catering
-              </a>
-            </li>
-            <li class="nav-item">
+          <li class="nav-item justify-content-end">
               <a class="nav-link" href="#about">
                 About
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item justify-content-end">
               <a class="nav-link" href="#menu">
                 Menu
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item justify-content-end">
               <a class="nav-link" href="#contact">
                 Contact
               </a>
@@ -35,24 +34,25 @@ function Catering() {
 
       <main class="container">
         {/* 메인 이미지 */}
-        <div>
-          <img src="https://www.w3schools.com/w3images/hamburger.jpg" />
-          <div>
+        <div class="card">
+          <img class="img-fluid" src="https://www.w3schools.com/w3images/hamburger.jpg" />
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
             <h1>Le Catering</h1>
           </div>
         </div>
 
         {/* about */}
-        <div class="row mx-auto" id="about">
-          <div class="col-sm-4">
+        <div class="row mt-5 pt-5 mx-auto" id="about">
+          <div class="col-sm-5 offset-sm-1 yun">
+          {/* offset-sm-2은 sm 2개 크기만큼 공간 비운다. */}
             {/* <div class="col-sm-4 offset-sm-2 p-3"> */}
-            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" />
+            <img class="img-fluid" src="https://www.w3schools.com/w3images/tablesetting2.jpg" />
           </div>
-          <div class="col-sm-4 p-3">
+          <div class="col-sm-5 p-3">
             {/* <div class="col-sm-4 p-3"> */}
-            <h3>About Catering</h3>
-            <h5>Tradition since 1889</h5>
-            <p>
+            <h3 class="text-center mt-3 mb-5 fs-1">About Catering</h3>
+            <h5 class="text-center mb-3">Tradition since 1889</h5>
+            <p class="text-center">
               The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
               consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -65,33 +65,33 @@ function Catering() {
         <hr />
 
         {/* menu */}
-        <div class="row mx-auto" id="menu">
-          <div class="col-sm-4 offset-sm-2 p-3">
-            <h3>Our Menu</h3>
-            <h5>Bread Basket</h5>
-            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+        <div class="row mt-5 pt-5 mx-auto" id="menu">
+          <div class="col-sm-5 offset-sm-1 p-3">
+            <h3 class="mt-3 mb-5 fs-1">Our Menu</h3>
+            <h5 class="fw-bold">Bread Basket</h5>
+            <p class="mb-4">Assortment of fresh baked fruit breads and muffins 5.50</p>
 
-            <h5>Honey Almond Granola with Fruits</h5>
-            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            <h5 class="fw-bold">Honey Almond Granola with Fruits</h5>
+            <p class="mb-4">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
 
-            <h5>Belgian Waffle</h5>
-            <p>Vanilla flavored batter with malted flour 7.50</p>
+            <h5 class="fw-bold">Belgian Waffle</h5>
+            <p class="mb-4">Vanilla flavored batter with malted flour 7.50</p>
 
-            <h5>Scrambled eggs</h5>
-            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            <h5 class="fw-bold">Scrambled eggs</h5>
+            <p class="mb-4">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
 
-            <h5>Blueberry Pancakes</h5>
-            <p>With syrup, butter and lots of berries 8.50</p>
+            <h5 class="fw-bold">Blueberry Pancakes</h5>
+            <p class="mb-4">With syrup, butter and lots of berries 8.50</p>
           </div>
-          <div class="col-sm-4 p-3">
-            <img src="https://www.w3schools.com/w3images/tablesetting.jpg" />
+          <div class="col-sm-5 p-3">
+            <img class="img-fluid" src="https://www.w3schools.com/w3images/tablesetting.jpg" />
           </div>
         </div>
         <hr />
 
         {/* contact */}
-        <div class="" id="contact">
-          <h3>Contact</h3>
+        <div class="mt-3 mb-5 pt-5 px-3" id="contact">
+          <h3 class="mt-3 mb-2 fs-1">Contact</h3>
           <p>
             We offer full-service catering for any event, large or small. We understand your needs
             and we will cater the food to satisfy the biggerst criteria of them all, both look and
@@ -104,7 +104,7 @@ function Catering() {
           </p>
           <div>
             <form>
-              <div class="form-group">
+              <div class="form-group mb-3">
                 <input
                   type="text"
                   class="form-control"
@@ -115,9 +115,9 @@ function Catering() {
                 <small id="emailHelp" class="form-text text-muted"></small>
               </div>
 
-              <div class="form-group">
+              <div class="form-group mb-3">
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
@@ -126,7 +126,18 @@ function Catering() {
                 <small id="emailHelp" class="form-text text-muted"></small>
               </div>
 
-              <div class="form-group">
+              <div class="form-group mb-3">
+                <input
+                  type="datetime-local"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Message \ Special requirements"
+                />
+                <small id="emailHelp" class="form-text text-muted"></small>
+              </div>
+              
+              <div class="form-group mb-3">
                 <input
                   type="text"
                   class="form-control"
@@ -136,7 +147,8 @@ function Catering() {
                 />
                 <small id="emailHelp" class="form-text text-muted"></small>
               </div>
-              <button type="submit" class="btn btn-primary">
+
+              <button type="button" class="btn btn-secondary">
                 SEND MESSAGE
               </button>
             </form>
@@ -150,7 +162,10 @@ function Catering() {
       <br />
       <footer class="fixed-bottom">
         <div class="shadow-none p-4 bg-light">
-          Powered by <a href="">s3.css</a>
+          <div class="d-flex flex-row justify-content-center">
+          <p>Powered by <a href="">s3.css</a></p>
+          </div>
+          
         </div>
       </footer>
     </div>

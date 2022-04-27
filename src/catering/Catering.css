@@ -1,7 +1,37 @@
+*{
+  font-family: fira code, consolas;
+  text-align: left;
+  color:rgb(58, 58, 58);
+}
+
 a {
   text-decoration: none;
+  color:rgb(58, 58, 58);
 }
 
 a:hover {
   text-decoration: none;
+  color:rgb(255, 136, 0);
 }
+/* 따로 지정해줘야 표시가 됐음.*/
+.nav-link{
+  color:rgb(58, 58, 58);
+}
+.nav-link:hover{
+  color:rgb(255, 136, 0);
+}
+
+/*
+적용안 됨....ㅠㅅㅠ
+input{
+  border: none;
+} */
+
+/* #about, .container {
+  border: solid 1px #000000;
+} */
+
+/* 임시로 크기 확인하려고 만든 사용자 지정 스타일 */
+/* .yun{
+  border: solid 1px red;
+} */
