@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import Button from 'react-bootstrap/Button'; //필요한 것만 쓸 때,
+// import {Button} from 'react-bootstrap';
+// import BSTest1 from './bstest1';
+// import BSTest2 from './BSTest2';
+// import Home from './Home';
+// import Home2 from './Home2';
+import Catering from './catering/Catering';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br />
+      {/* <BSTest1 /> */}
+      {/* <BSTest2 /> */}
+      {/* <Home /> */}
+      {/* <Home2 /> */}
+      <Catering />
     </div>
   );
 }
